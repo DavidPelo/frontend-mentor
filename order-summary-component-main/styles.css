@@ -31,7 +31,7 @@ body {
   background-image: url('./images/pattern-background-mobile.svg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100vw;
+  background-size: 100% 50vmin;
 }
 
 button {
