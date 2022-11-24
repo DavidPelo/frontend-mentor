@@ -22,8 +22,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/simple-qr-code-component-CNOuUQmm_X)
-- [Live](https://superlative-blini-d10bb1.netlify.app/)
+- [Solution](https://www.frontendmentor.io/solutions/order-summary-using-htmlcsssome-flexbox-THCTQhm3OA)
+- [Live](https://incomparable-strudel-dbb665.netlify.app/)
 
 ## Author
 
