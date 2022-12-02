@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+
+        <section class="call-to-action">
+          <h1>Join our community</h1>
+          <h2>30-day, hassle-free money back guarantee</h2>
+          <p>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </section>
+
+        <!-- flex container will be column-oriented in mobile and row-oriented on desktop -->
+        <div class="flex-container">
+
+          <section class="subscription">
+            <h2>Monthly Subscription</h2>
+            <div class="monthly-price">
+              <span>&dollar;29 </span><span>per month</span>
+            </div>
+            <h3>Full access for less than &dollar;1 a day</h3>
+            <button type="button">Sign Up</button>
+          </section>
+
+          <section class="why-us">
+            <h2>Why Us</h2>
+            <ul>
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </section>
+
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">David Pelo</a>.
+      </p>
+    </footer>
+  </body>
+</html>
