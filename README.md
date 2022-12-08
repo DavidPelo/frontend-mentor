@@ -10,4 +10,5 @@ This repo contains my solutions to projects from [frontendmentor.io ](https://ww
 | HTML // CSS      | QR code component | [Live](https://superlative-blini-d10bb1.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/qr-code-component-main) |Free
 | HTML // CSS      | Order Summary Component | [Live](https://incomparable-strudel-dbb665.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/order-summary-component-main) |Free
 | HTML // CSS      | Single Price Grid Component | [Live](https://extraordinary-pika-c342fd.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/single-price-grid-component-master) |Free
+| HTML // CSS      | Stats Preview Card Component | [Live](https://dancing-salmiakki-2d3938.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/stats-preview-card-component-main) |Free
 
