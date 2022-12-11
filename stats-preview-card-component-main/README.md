@@ -1,19 +1,38 @@
-# Frontend Mentor - Stats preview card component solution
-
-## Table of contents
-
-- [Frontend Mentor - Stats preview card component solution](#frontend-mentor---stats-preview-card-component-solution)
-  - [Table of contents](#table-of-contents)
-    - [Screenshot](#screenshot)
-    - [Built With](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Links](#links)
-  - [Author](#author)
-
-### Screenshot
-
-![Stats Preview Card Component Mobile](./mobile-screenshot.png)
 ![Stats Preview Card Component Desktop](./desktop-screenshot.png)
+
+<h1 align="center">Stats preview card component solution
+</h1>
+
+<div align="center">
+  <h3>
+    <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-N0w9hd4euT" color="white">
+      Live
+    </a>
+    <span> | </span>
+    <a href="https://dancing-salmiakki-2d3938.netlify.app/">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">
+      Challenge
+    </a>
+  </h3>
+
+  <div align="center">
+   Created by David Pelo
+</div>
+
+  <h4>
+    <a href="https://www.davidpelo.com" color="white">
+      Website
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/profile/DavidPelo">
+      Frontend Mentor
+    </a>
+  </h4>
+</div>
+<br><br>
 
 ### Built With
 
@@ -44,13 +63,3 @@ Set the background color of the image container and setup up the mix-blend-mode 
   opacity: 0.75;
 }
 ```
-
-### Links
-
-- [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-N0w9hd4euT)
-- [Live](https://dancing-salmiakki-2d3938.netlify.app/)
-
-## Author
-
-- Website - [David Pelo](https://www.davidpelo.com)
-- Frontend Mentor - [@DavidPelo](https://www.frontendmentor.io/profile/DavidPelo)
