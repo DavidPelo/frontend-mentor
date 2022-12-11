@@ -6,6 +6,7 @@
   - [Table of contents](#table-of-contents)
     - [Screenshot](#screenshot)
     - [Built With](#built-with)
+    - [What I learned](#what-i-learned)
     - [Links](#links)
   - [Author](#author)
 
@@ -14,12 +15,35 @@
 ![Stats Preview Card Component Mobile](./mobile-screenshot.png)
 ![Stats Preview Card Component Desktop](./desktop-screenshot.png)
 
-
 ### Built With
+
 - HTML5
 - CSS3
 - Flexbox
 - Mobile-first design
+
+### What I learned
+
+Setting an overlay color to a image is really easy!
+
+Set the background color of the image container and setup up the mix-blend-mode property, as well as the opacity property to your desired value.
+
+```html
+<div class="img-container">
+  <img class="img" />
+</div>
+```
+
+```css
+.img-container {
+  background-color: hsl(277, 64%, 61%);
+}
+
+.img {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+```
 
 ### Links
 
