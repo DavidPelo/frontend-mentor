@@ -17,11 +17,7 @@
       Challenge
     </a>
   </h3>
-
-  <div align="center">
    Created by David Pelo
-</div>
-
   <h4>
     <a href="https://www.davidpelo.com" color="white">
       Website
