@@ -5,11 +5,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-N0w9hd4euT" color="white">
+    <a href="https://dancing-salmiakki-2d3938.netlify.app/" color="white">
       Live
     </a>
     <span> | </span>
-    <a href="https://dancing-salmiakki-2d3938.netlify.app/">
+    <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-N0w9hd4euThttps://dancing-salmiakki-2d3938.netlify.app/">
       Solution
     </a>
     <span> | </span>
