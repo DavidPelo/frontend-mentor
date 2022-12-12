@@ -5,25 +5,25 @@
 
 <div align="center">
   <h3>
-    <a href="https://celebrated-cucurucho-a02be0.netlify.app/" color="white">
+    <a href="https://celebrated-cucurucho-a02be0.netlify.app/" color="white" target="_blank">
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/interactive-rating-component-HYs83Y-xy4">
+    <a href="https://www.frontendmentor.io/solutions/interactive-rating-component-HYs83Y-xy4" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
+    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank">
       Challenge
     </a>
   </h3>
    Created by David Pelo
   <h4>
-    <a href="https://www.davidpelo.com" color="white">
+    <a href="https://www.davidpelo.com" color="white" target="_blank">
       Website
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/profile/DavidPelo">
+    <a href="https://www.frontendmentor.io/profile/DavidPelo" target="_blank">
       Frontend Mentor
     </a>
   </h4>
