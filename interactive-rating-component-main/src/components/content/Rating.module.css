@@ -1,0 +1,106 @@
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262F38;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  color: var(--c-white);
+  font-family: var(--ff-main);
+  font-weight: var(--fweight-bold);
+  font-size: 2.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.ratingSection {
+  display: inline-block;
+  width: 100%;
+  min-width: 100%;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slideOut {
+  opacity: 0;
+  transform: translateX(-200%);
+}
+
+.text {
+  color: var(--cn-light-grey);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.submitButton {
+  font-family: var(--ff-main);
+  font-size: 1.5rem;
+  background-color: var(--cp-orange);
+  border-radius: 25px;
+  border-style: none;
+  color: var(--c-white);
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+  width: 100%;
+  padding: 1.25rem;
+  cursor: pointer;
+}
+
+.submittable:hover {
+  color: var(--cp-orange);
+  background-color: var(--c-white);
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  margin-bottom: 3.3rem;
+}
+
+.ratingButton {
+  background-color: #262F38;
+  color: var(--cn-medium-grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 1.75rem;
+  font-weight: var(--fweight-bold);
+}
+
+.ratingButton:hover {
+  background-color: var(--cp-orange);
+  color: var(--c-white);
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.activeRating {
+  background-color: var(--cn-light-grey);
+  color: white;
+}
+
+.inactive {
+  transition: all 0.3s linear;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
