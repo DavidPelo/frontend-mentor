@@ -4,14 +4,15 @@ div {
 
 h1 {
   font-size: 2.75rem;
-  color: var(--c-white);
+  color: var(--clr-white);
   margin-bottom: 1rem;
 }
 
 .text {
-  color: var(--cn-light-grey);
+  color: var(--clr-light-grey);
   font-size: 1.75rem;
   line-height: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .thankYouSection {
@@ -19,9 +20,6 @@ h1 {
   min-width: 100%;
   text-align: center;
   height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   opacity: 0;
   transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -36,10 +34,29 @@ h1 {
 .rating {
   display: inline-block;
   border-radius: 25px;
-  background-color: #262F38;
-  color: var(--cp-orange);
-  margin-bottom: 3.75rem;
+  background-color: var(--clr-circle);
+  color: var(--clr-orange);
+  margin-bottom: 2rem;
   padding: 0.6rem 1.5rem 0.25rem 1.5rem;
+}
+
+.resetButton {
+  background-color: var(--clr-orange);
+  border-radius: 25px;
+  border-style: none;
+  color: var(--clr-white);
+  display: inline-block;
+  letter-spacing: 0.2ch;
+  margin-bottom: 3.75rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+
+.resetButton:hover {
+  color: var(--clr-orange);
+  background-color: var(--clr-white);
+  font-weight: var(--fw-bold);
 }
 
 

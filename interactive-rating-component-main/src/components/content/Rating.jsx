@@ -1,15 +1,11 @@
-import { useState } from 'react'
-
 import styles from './Rating.module.css'
 
 import { default as star } from '../../assets/images/icon-star.svg'
 
 function Rating(props) {
-  const [activeButton, setActiveButton] = useState(null)
   const ratings = [1, 2, 3, 4, 5]
 
   function handleClick(buttonNumber) {
-    setActiveButton(buttonNumber)
     props.onRatingClick(buttonNumber)
   }
 
@@ -29,7 +25,7 @@ function Rating(props) {
           return (
             <button
               className={`${styles.ratingButton} ${
-                activeButton === rating ? styles.activeRating : ''
+                props.activeRating === rating ? styles.activeRating : ''
               }`}
               type="button"
               onClick={() => handleClick(rating)}
@@ -42,9 +38,9 @@ function Rating(props) {
 
       <button
         type="submit"
-        disabled={!props.isRatingSelected}
-        className={`${styles.submitButton} ${!props.isRatingSelected ? styles.disabled : null} ${
-          props.isRatingSelected ? styles.submittable : null
+        disabled={!props.activeRating}
+        className={`${styles.submitButton} ${!props.activeRating ? styles.disabled : null} ${
+          props.activeRating ? styles.submittable : null
         }`}
         onClick={() => props.handleSubmit()}>
         Submit

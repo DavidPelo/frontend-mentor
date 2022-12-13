@@ -2,7 +2,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #262F38;
+  background-color: var(--clr-circle);
   border-radius: 50%;
   height: 45px;
   width: 45px;
@@ -10,9 +10,9 @@ span {
 }
 
 h1 {
-  color: var(--c-white);
+  color: var(--clr-white);
   font-family: var(--ff-main);
-  font-weight: var(--fweight-bold);
+  font-weight: var(--fw-bold);
   font-size: 2.75rem;
   margin-bottom: 1.75rem;
 }
@@ -32,7 +32,7 @@ h1 {
 }
 
 .text {
-  color: var(--cn-light-grey);
+  color: var(--clr-light-grey);
   font-size: 1.5rem;
   line-height: 2.25rem;
   margin-bottom: 2.5rem;
@@ -41,20 +41,22 @@ h1 {
 .submitButton {
   font-family: var(--ff-main);
   font-size: 1.5rem;
-  background-color: var(--cp-orange);
+  background-color: var(--clr-orange);
   border-radius: 25px;
   border-style: none;
-  color: var(--c-white);
+  color: var(--clr-white);
   text-transform: uppercase;
   letter-spacing: 0.2ch;
   width: 100%;
   padding: 1.25rem;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .submittable:hover {
-  color: var(--cp-orange);
-  background-color: var(--c-white);
+  color: var(--clr-orange);
+  background-color: var(--clr-white);
+  font-weight: var(--fw-bold);
 }
 
 .ratings {
@@ -66,8 +68,8 @@ h1 {
 }
 
 .ratingButton {
-  background-color: #262F38;
-  color: var(--cn-medium-grey);
+  background-color: var(--clr-circle);
+  color: var(--clr-medium-grey);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -77,12 +79,13 @@ h1 {
   cursor: pointer;
   border-style: none;
   font-size: 1.75rem;
-  font-weight: var(--fweight-bold);
+  font-weight: var(--fw-bold);
+  transition: all 0.2s ease-out;
 }
 
 .ratingButton:hover {
-  background-color: var(--cp-orange);
-  color: var(--c-white);
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
 }
 
 .disabled {
@@ -90,17 +93,6 @@ h1 {
 }
 
 .activeRating {
-  background-color: var(--cn-light-grey);
+  background-color: var(--clr-light-grey);
   color: white;
-}
-
-.inactive {
-  transition: all 0.3s linear;
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.active {
-  opacity: 1;
-  transform: translateX(0%);
 }

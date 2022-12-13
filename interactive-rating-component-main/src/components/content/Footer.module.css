@@ -4,7 +4,7 @@ footer {
   justify-content: center;
   position: absolute;
   bottom: 10px;
-  color: rgb(129, 129, 129);
+  color: var(--clr-medium-grey);
   width: 100%;
 }
 
@@ -14,5 +14,5 @@ footer {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-orange);
 }

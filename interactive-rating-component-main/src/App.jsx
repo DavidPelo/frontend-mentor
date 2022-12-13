@@ -19,17 +19,26 @@ function App() {
     setIsSubmitted(true)
   }
 
+  function resetHandler() {
+    setSelectedRating(null)
+    setIsSubmitted(false)
+  }
+
   return (
     <>
       <main>
         <Card>
           <Rating
             isActiveSlide={!isSubmitted}
-            isRatingSelected={selectedRating ? true : false}
+            activeRating={selectedRating}
             onRatingClick={handleRatingClick}
             handleSubmit={submitHandler}
           />
-          <ThankYou isActiveSlide={isSubmitted} selectedRating={selectedRating} />
+          <ThankYou
+            isActiveSlide={isSubmitted}
+            selectedRating={selectedRating}
+            onReset={resetHandler}
+          />
         </Card>
       </main>
       <Footer />
