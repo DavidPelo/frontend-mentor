@@ -11,5 +11,6 @@ This repo contains my solutions to projects from [frontendmentor.io ](https://ww
 | HTML // CSS      | Order Summary Component | [Live](https://incomparable-strudel-dbb665.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/order-summary-component-main) |Free
 | HTML // CSS      | Single Price Grid Component | [Live](https://extraordinary-pika-c342fd.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/single-price-grid-component-master) |Free
 | HTML // CSS      | Stats Preview Card Component | [Live](https://dancing-salmiakki-2d3938.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/stats-preview-card-component-main) |Free
+| HTML // CSS      | 3 Column Preview Card Component | [Live](https://frolicking-donut-cc51a1.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/3-column-preview-card-component-main) |Free
 | React      | Interactive Rating Component | [Live](https://celebrated-cucurucho-a02be0.netlify.app/) | [Code](https://github.com/DavidPelo/frontend-mentor/tree/main/interactive-rating-component-main) |Free
 
