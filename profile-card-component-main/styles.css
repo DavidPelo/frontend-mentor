@@ -39,22 +39,6 @@ body {
     bottom calc(-978px / 2) right calc(-978px / 2);
 }
 
-.bg-top {
-  background-image: url('./images/bg-pattern-top.svg');
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 100%;
-  width: 100%;
-}
-
-.bg-bottom {
-  background-image: url('./images/bg-pattern-bottom.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-}
-
 main {
   display: flex;
   align-items: center;
