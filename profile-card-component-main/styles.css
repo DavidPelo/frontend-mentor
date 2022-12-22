@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 :root {
   --clr-cyan: hsl(185, 75%, 39%);
   --clr-dark-blue: hsl(229, 23%, 23%);
@@ -25,19 +26,104 @@ html {
 }
 
 body {
-  background-color: var(--clr-grey-main);
-  color: #fff;
+  background-color: var(--clr-cyan);
+  color: var(--clr-dark-blue);
   font-family: var(--ff-main);
   font-size: var(--fs-default);
   font-weight: var(--fw-normal);
   min-height: 100vh;
-  position: relative;
+  background-image: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: top calc(-978px / 2) left calc(-978px / 2),
+    bottom calc(-978px / 2) right calc(-978px / 2);
+}
+
+.bg-top {
+  background-image: url('./images/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-bottom {
+  background-image: url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 13px 38px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  min-height: 370px;
+  width: 90%;
+}
+
+.card-background {
+  max-height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2.5rem;
+}
+
+.name {
+  display: inline-block;
+}
+
+.age {
+  color: var(--clr-dark-gray);
+  margin-left: 0.5rem;
+}
+
+.city {
+  color: var(--clr-dark-gray);
+  font-size: 1.4rem;
+  margin-top: 0.75rem;
+}
+
+.profile-photo {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -56px;
+  margin-bottom: 1.25rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 5rem;
+}
+
+.stat h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.stat p {
+  color: var(--clr-dark-gray);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+  letter-spacing: 0.2ch;
 }
 
 footer {
@@ -45,15 +131,29 @@ footer {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
+  height: 50px;
 }
 
 .attribution {
+  color: var(--clr-dark-grey);
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
+}
+
+@media (min-width: 300px) {
+  .stats {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 375px) {
+  .card {
+    max-width: 350px;
+  }
 }
