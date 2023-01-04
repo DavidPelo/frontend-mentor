@@ -5,7 +5,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://stunning-flan-677ee8.netlify.app/" color="white">
+    <a href="https://dancing-salmiakki-2d3938.netlify.app/" color="white">
       Live
     </a>
     <span> | </span>

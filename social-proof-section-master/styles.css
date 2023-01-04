@@ -162,7 +162,7 @@ footer {
     background-image: url('./images/bg-pattern-top-desktop.svg'),
       url('./images/bg-pattern-bottom-desktop.svg');
     background-size: auto;
-    background-position: top 0 left 0, bottom -225px right 500px;
+    background-position: top 0 left 0, bottom -225px right 0;
   }
 
   main {
