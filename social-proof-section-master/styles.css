@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-p-dark-magenta: hsl(300, 43%, 22%);
+  --clr-p-soft-pink: hsl(333, 80%, 67%);
+
+  --clr-n-dark-muted-magenta: hsl(303, 10%, 53%);
+  --clr-n-light-muted-magenta: hsl(300, 24%, 96%);
+
+  --fs-default: 1.5rem;
+
+  --ff-main: 'League Spartan', sans-serif;
+
+  --fw-light: 400;
+  --fw-medium: 500;
+  --fw-heavy: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--clr-white);
+  font-family: var(--ff-main);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-medium);
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-p-dark-magenta);
+}
+
+.attribution a {
+  color: var(--clr-p-soft-pink);
+}
+
+.section1 {
+  background-color: red;
+}
+
+.section2 {
+  background-color: blue;
+}
+
+.section3 {
+  grid-column: 1 / -1;
+  background-color: green;
+}
