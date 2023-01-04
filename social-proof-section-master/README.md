@@ -9,11 +9,11 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-N0w9hd4euThttps://dancing-salmiakki-2d3938.netlify.app/">
+    <a href="https://www.frontendmentor.io/solutions/social-proof-section-cGg3VfET_O">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">
+    <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA">
       Challenge
     </a>
   </h3>
@@ -35,27 +35,29 @@
 - HTML5
 - CSS3
 - Flexbox
+- CSS Grid
 - Mobile-first design
 
 ### What I learned
 
-Setting an overlay color to a image is really easy!
+This challenge allowed me to practice both page and component layouts.
 
-Set the background color of the image container and setup up the mix-blend-mode property, as well as the opacity property to your desired value.
+A main challenge I had to solve was to find a way to create a "hero" in desktop view that would always have consistent margins.
 
-```html
-<div class="img-container">
-  <img class="img" />
-</div>
-```
+I got the look I was going for by setting position to absolute on the element, and using the margin properties in combination with bottom, top, left, right.
 
 ```css
-.img-container {
-  background-color: hsl(277, 64%, 61%);
-}
-
-.img {
-  mix-blend-mode: multiply;
-  opacity: 0.75;
-}
+main {
+    gap: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 17.5rem;
+    margin-bottom: 17.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1110px;
+  }
 ```
