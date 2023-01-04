@@ -36,11 +36,17 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-default);
   font-weight: var(--fw-medium);
+  background-image: url('./images/bg-pattern-top-mobile.svg'),
+    url('./images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 left 0, bottom 0 right 0;
+  background-size: 100% 50vmin;
+  background-attachment: fixed;
 }
 
 main {
-  width: 90%;
-  margin: 100px auto 100px auto;
+  width: 87.5%;
+  margin: 14rem auto;
 }
 
 footer {
@@ -64,25 +70,27 @@ footer {
 }
 
 .statement h1 {
-  font-size: 6.4rem;
+  font-size: 3.75rem;
   font-weight: var(--fw-heavy);
-  letter-spacing: -0.25rem;
-  line-height: 5rem;
-  margin-bottom: 3.6rem;
+  letter-spacing: -0.1rem;
+  line-height: 3.5rem;
+  margin: 0 auto 1.6rem auto;
+  width: 75%;
 }
 
 .statement p {
-  font-size: 1.5rem;
-  line-height: 3ch;
+  color: var(--clr-n-dark-muted-magenta);
+  line-height: 2.5rem;
+  font-size: 1.75rem;
 }
 
 .ratings {
-  margin-bottom: 3.6rem;
+  margin-bottom: 5rem;
 }
 
 .rating-card {
   background-color: var(--clr-n-light-muted-magenta);
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -96,8 +104,12 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+.rating img:not(last-child) {
+  margin-right: 0.5rem;
+}
+
 .rating-card figcaption {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: var(--fw-heavy);
 }
 
@@ -108,8 +120,8 @@ footer {
 .testimonial-card {
   background-color: var(--clr-p-dark-magenta);
   color: var(--clr-n-light-muted-magenta);
-  border-radius: 12px;
-  padding: 3.6rem;
+  border-radius: 8px;
+  padding: 3rem;
 }
 
 .testimonial-card:not(last-child) {
@@ -124,71 +136,57 @@ footer {
 
 .buyer img {
   border-radius: 50%;
-  margin-right: 2.4rem;
+  margin-right: 2rem;
+  width: 4rem;
 }
 
 .buyer p:first-child {
   font-weight: var(--fw-medium);
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .buyer p:last-child {
   color: var(--clr-p-soft-pink);
-  font-size: 1.8rem;
-  font-weight: var(--fw-light);
+  font-size: 1.7rem;
 }
 
 .testimonial {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: var(--fw-light);
-  line-height: 2.5rem;
+  line-height: 2.25rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+  body {
+    background-image: url('./images/bg-pattern-top-desktop.svg'),
+      url('./images/bg-pattern-bottom-desktop.svg');
+    background-size: auto;
+    background-position: top 0 left 0, bottom -225px right 0;
+  }
+
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 3rem;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
   }
 
   .statement {
+    align-self: center;
     text-align: left;
-  }
-
-  .ratings {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .rating-card {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
     width: 80%;
   }
 
-  .rating {
-    margin-right: 1.5rem;
-    margin-bottom: 0;
+  .statement h1 {
+    font-size: 5.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 2.75rem;
+    width: 100%;
+  }
+
+  .statement p {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
   }
 
   .rating-card:nth-child(1) {
@@ -201,13 +199,75 @@ footer {
     align-self: flex-end;
   }
 
-  .testimonials {
+  .ratings {
+    align-self: center;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .rating-card {
+    width: 82.5%;
   }
 
   .testimonial-card {
-    height: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  main {
+    gap: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 17.5rem;
+    margin-bottom: 17.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1110px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rating-card {
+    display: flex;
+    align-items: center;
+    padding: 1.75rem 3rem;
+  }
+
+  .rating-card figcaption {
+    font-size: 1.7rem;
+  }
+
+  .rating {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .rating img {
+    margin-right: 0.4rem;
+  }
+
+  .rating img:last-child {
+    margin-right: 1.75rem;
+  }
+
+  .testimonials {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .testimonial-card {
+    height: 85%;
   }
 
   .testimonial-card:nth-child(1) {
