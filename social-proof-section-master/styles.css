@@ -32,6 +32,7 @@ html {
 
 body {
   background-color: var(--clr-white);
+  color: var(--clr-p-dark-magenta);
   font-family: var(--ff-main);
   font-size: var(--fs-default);
   font-weight: var(--fw-medium);
@@ -56,25 +57,100 @@ footer {
   color: var(--clr-p-soft-pink);
 }
 
-.section1 {
-  background-color: red;
+.statement {
+  color: var(--clr-p-dark-magenta);
+  text-align: center;
+  margin-bottom: 3.6rem;
 }
 
-.section2 {
-  background-color: blue;
+.statement h1 {
+  font-size: 6.4rem;
+  font-weight: var(--fw-heavy);
+  letter-spacing: -0.25rem;
+  line-height: 5rem;
+  margin-bottom: 3.6rem;
 }
 
-.section3 {
+.statement p {
+  font-size: 1.5rem;
+  line-height: 3ch;
+}
+
+.ratings {
+  margin-bottom: 3.6rem;
+}
+
+.rating-card {
+  background-color: var(--clr-n-light-muted-magenta);
+  border-radius: 12px;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.rating-card:not(last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.rating {
+  margin-bottom: 1.5rem;
+}
+
+.rating-card figcaption {
+  font-size: 1.5rem;
+  font-weight: var(--fw-heavy);
+}
+
+.testimonials {
   grid-column: 1 / -1;
-  background-color: green;
+}
+
+.testimonial-card {
+  background-color: var(--clr-p-dark-magenta);
+  color: var(--clr-n-light-muted-magenta);
+  border-radius: 12px;
+  padding: 3.6rem;
+}
+
+.testimonial-card:not(last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.buyer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.buyer img {
+  border-radius: 50%;
+  margin-right: 2.4rem;
+}
+
+.buyer p:first-child {
+  font-weight: var(--fw-medium);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.buyer p:last-child {
+  color: var(--clr-p-soft-pink);
+  font-size: 1.8rem;
+  font-weight: var(--fw-light);
+}
+
+.testimonial {
+  font-size: 2rem;
+  font-weight: var(--fw-light);
+  line-height: 2.5rem;
 }
 
 @media (min-width: 600px) {
-
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 3rem;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -91,5 +167,56 @@ footer {
     bottom: 10px;
     text-align: center;
     width: 100%;
+  }
+
+  .statement {
+    text-align: left;
+  }
+
+  .ratings {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .rating-card {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    width: 80%;
+  }
+
+  .rating {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .rating-card:nth-child(1) {
+    align-self: flex-start;
+  }
+  .rating-card:nth-child(2) {
+    align-self: center;
+  }
+  .rating-card:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .testimonials {
+    display: flex;
+    gap: 10px;
+  }
+
+  .testimonial-card {
+    height: 80%;
+  }
+
+  .testimonial-card:nth-child(1) {
+    align-self: flex-start;
+  }
+  .testimonial-card:nth-child(2) {
+    align-self: center;
+  }
+  .testimonial-card:nth-child(3) {
+    align-self: flex-end;
   }
 }
