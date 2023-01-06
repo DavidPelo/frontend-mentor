@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <div class="container">
+          <header>
+      <h2>Reliable, efficient delivery</h2>
+      <h1>Powered by Technology</h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+    <main class="flexible">
+      <article class="card-container cyan">
+        <div class="card-content">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img
+            class="card-icon"
+            src="./images/icon-supervisor.svg"
+            alt="supervisor icon"
+          />
+        </div>
+      </article>
+      <div class="flexible-inner">
+        <article class="card-container red">
+          <div class="card-content">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img
+              class="card-icon"
+              src="./images/icon-team-builder.svg"
+              alt="teambuilder icon"
+            />
+          </div>
+        </article>
+        <article class="card-container orange">
+          <div class="card-content">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img
+              class="card-icon"
+              src="./images/icon-karma.svg"
+              alt="karma icon"
+            />
+          </div>
+        </article>
+      </div>
+      <article class="card-container blue">
+        <div class="card-content">
+          <h3>Calculator</h3>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            class="card-icon"
+            src="./images/icon-calculator.svg"
+            alt="calculator icon"
+          />
+        </div>
+      </article>
+    </main>
+    </div>
 
-
-</head>
-<body>
-  <header>
-    Reliable, efficient delivery
-    Powered by Technology
-
-    Our Artificial Intelligence powered tools use millions of project data points 
-    to ensure that your project is successful
-  </header>
-  <main>
-    Supervisor
-    Monitors activity to identify project roadblocks
-
-    Team Builder
-    Scans our talent network to create the optimal team for your project
-
-    Karma
-    Regularly evaluates our talent to ensure quality
-
-    Calculator
-    Uses data from past projects to provide better delivery estimates
-  </main>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">David Pelo</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">David Pelo</a>.
+      </p>
+    </footer>
+  </body>
 </html>
