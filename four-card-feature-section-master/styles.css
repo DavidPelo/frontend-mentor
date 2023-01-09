@@ -77,11 +77,16 @@ header p {
   gap: 2.4rem;
 }
 
-.card-container {
-  border-radius: 8px;
+.card {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  padding-top: 5px;
   height: 22rem;
+}
+
+.top-border {
+  display: block;
+  content: "";
+  height: 5px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .card-content {
@@ -179,7 +184,7 @@ footer {
     align-items: center;
   }
 
-  .card-container {
+  .card {
     height: 25rem;
     flex: 1;
   }
